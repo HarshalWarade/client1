@@ -13,7 +13,7 @@ document.write(`
   </nav>
 
   <button
-    class="hidden md:inline-block bg-[#0068B5] rounded-sm text-white px-4 py-2"
+    class="hidden md:inline-block bg-[#F60014] rounded-sm text-white px-4 py-2"
   >
     BOOK A DEMO
   </button>
@@ -47,7 +47,7 @@ document.write(`
     <a href="contact.html" class="hover:text-gray-600">Contact</a>
     <li>
       <button
-        class="bg-[#0068B5] rounded-sm text-white px-4 py-2"
+        class="bg-[#F60014] rounded-sm text-white px-4 py-2"
       >
         BOOK A DEMO
       </button>
