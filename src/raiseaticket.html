@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Name</title>
+    <link rel="stylesheet" href="../utils/other.css" />
+    <link rel="stylesheet" href="../utils/main.css" />
+    <link rel="stylesheet" href="../utils/gen.css" />
+    <style>
+      @layer components {
+        .custom-input {
+          @apply w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400;
+        }
+      }
+      .custom-input {
+        @apply w-full px-4 py-2 border border-gray-300 rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400;
+      }
+      .custom-input::placeholder {
+        @apply text-gray-400;
+      }
+      .custom-input-readonly {
+        @apply bg-gray-100 border-none cursor-default;
+      }
+      .form-container {
+        max-width: 500px;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <script src="navbar.js"></script>
+
+    <section
+      id="formsection"
+      class="bg-[#F8F9FB] py-14 flex items-center justify-center min-h-screen"
+    >
+      <div class="container mx-auto px-4">
+        <div
+          class="flex flex-col lg:flex-row items-center justify-center gap-10"
+        >
+          <div class="hidden lg:block lg:w-1/2">
+            <h2 class="text-xl font-semibold text-center">
+              We are always happy to lend a helping hand !
+            </h2>
+            <br />
+            <img
+              src="../assets/ActiveSupport-bro 1.jpg"
+              alt="Form Image"
+              class="w-full h-auto"
+            />
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg p-8 lg:w-1/2 w-full">
+            <h2 class="text-2xl font-semibold text-center mb-6">
+              Create a ticket for your problem
+            </h2>
+
+            <form action="#" method="POST" class="space-y-4">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Client Id* (FOR EXAMPLE: #14257)"
+                  class="border w-full p-3 outline-none"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Name*"
+                  class="border w-full p-3 outline-none"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Email*"
+                  class="border w-full p-3 outline-none"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="tel"
+                  placeholder="Phone Number*"
+                  class="border w-full p-3 outline-none"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                type="text"
+                  placeholder="Your Issue*"
+                  class="border w-full p-3 outline-none"
+                  required
+                ></input>
+              </div>
+              <div>
+                <textarea
+                  placeholder="Description*"
+                  class="border w-full p-3 outline-none min-h-[100px]"
+                  required
+                ></textarea>
+              </div>
+              <div class="w-full">
+                <div class="flex items-center justify-between border border-gray-300 bg-white p-4 rounded-md">
+                  <span class="text-gray-600">Attach file</span>
+                  <label for="file-upload" class="cursor-pointer text-blue-600 font-semibold">
+                    UPLOAD
+                  </label>
+                  <input id="file-upload" type="file" class="hidden">
+                </div>
+              </div>
+              <div class="text-gray-600 text-sm">
+                By submitting this form, you agree to the processing of personal
+                data according to our Privacy Policy.
+              </div>
+              <div class="mt-4">
+                <button
+                  type="submit"
+                  class="w-full bg-[#056CB8] text-white py-3 rounded-sm hover:bg-blue-700 transition"
+                >
+                  SUBMIT
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="footer.js"></script>
+  </body>
+</html>
