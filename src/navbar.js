@@ -6,10 +6,9 @@ document.write(`
   <div class="text-xl font-bold">Logo</div>
 
   <nav class="hidden md:flex space-x-6">
-    <a href="index.html" class="hover:text-gray-600">Home</a>
+    <a href="#" class="hover:text-gray-600">Products</a>
     <a href="#" class="hover:text-gray-600">Company</a>
-    <a href="raiseaticket.html" class="hover:text-gray-600">Raise Ticket</a>
-    <a href="contact.html" class="hover:text-gray-600">Contact</a>
+    <a href="#" class="hover:text-gray-600">...</a>
   </nav>
 
   <button
@@ -41,10 +40,9 @@ document.write(`
 
 <nav class="md:hidden bg-white text-gray-800 hidden" id="mobileMenu">
   <ul class="flex flex-col space-y-4 p-4">
-    <li><a href="index.html" class="hover:text-gray-600">Home</a></li>
+    <li><a href="#" class="hover:text-gray-600">Products</a></li>
     <li><a href="#" class="hover:text-gray-600">Company</a></li>
-    <a href="raiseaticket.html" class="hover:text-gray-600">Raise Ticket</a>
-    <a href="contact.html" class="hover:text-gray-600">Contact</a>
+    <li><a href="#" class="hover:text-gray-600">...</a></li>
     <li>
       <button
         class="bg-[#F60014] rounded-sm text-white px-4 py-2"
