@@ -1,7 +1,7 @@
 document.write(`
 <header class="bg-white text-gray-800">
 <div
-  class="container mx-auto flex items-center justify-between py-4 px-2"
+  class="container mx-auto flex items-center justify-between py-4 md:px-16 px-6"
 >
   <div class="text-xl font-bold">Logo</div>
 
