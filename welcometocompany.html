@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Name</title>
+    <link rel="stylesheet" href="./utils/other.css" />
+    <link rel="stylesheet" href="./utils/main.css" />
+    <link rel="stylesheet" href="./utils/gen.css" />
+  </head>
+  <body class="bg-[#191919] text-white">
+    <div class="flex flex-col lg:flex-row min-h-screen">
+      <div class="hidden lg:block lg:w-1/12 bg-black p-4">
+        <h2 class="text-white">---</h2>
+      </div>
+      <div
+        class="lg:w-11/12 w-full flex flex-col items-center justify-center py-10 px-4"
+      >
+        <div class="flex flex-col gap-5 text-center mb-10">
+          <h1 class="text-3xl md:text-5xl font-bold">
+            Welcome To <span class="text-yellow-500">Company Name</span>
+          </h1>
+          <p class="text-gray-400 text-lg mt-2">Contact Us</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Contact Form -->
+          <div class="bg-[black] p-6 rounded-lg">
+            <h2 class="text-blue-400 mb-4">
+              <a href="">Facing Any Issues?</a>
+              <span class="text-white">Create A Ticket For Your Problem</span>
+              <span class="text-gray-500">#1254</span>
+            </h2>
+            <br />
+            <form action="#" method="POST">
+              <div class="mb-4 flex flex-col gap-3">
+                <label class="block text-sm font-medium">Your Problem</label>
+                <input
+                  type="text"
+                  class="w-full p-2 bg-[#191919] text-white outline-none"
+                />
+              </div>
+              <div class="mb-6 flex flex-col gap-3">
+                <label class="block text-sm font-medium">Description</label>
+                <textarea
+                  class="w-full p-2 bg-[#191919] text-white outline-none h-32"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-[#191919] hover:bg-[#191919] text-white px-4 py-2 rounded-lg w-full"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+
+          <div class="bg-[#000000] p-6 rounded-lg">
+            <h2 class="text-blue-400 mb-4">Get In Touch</h2>
+            <ul class="space-y-4 flex flex-col pt-10 justify-between h-[80%]">
+              <li class="flex items-center">
+                <div
+                  class="w-6 h-6 mr-2 text-slate-400"
+                >
+                <ion-icon name="call-outline" class="text-xl"></ion-icon>
+                </div>
+                <span>+91-8787878787</span>
+              </li>
+              <li class="flex items-center">
+                <div
+                  class="w-6 h-6 mr-2 text-slate-400"
+                >
+                <ion-icon name="mail-outline"></ion-icon>
+                </div>
+                <span>contact@companyname.com</span>
+              </li>
+              <li class="flex items-center">
+                <div
+                  class="w-6 h-6 mr-2 text-slate-400"
+                >
+                <ion-icon name="earth-outline"></ion-icon>
+                </div>
+                <span>companyname.com</span>
+              </li>
+              <li class="flex items-center">
+                <div
+                  class="w-6 h-6 mr-2 text-slate-400"
+                >
+                <ion-icon name="location-outline"></ion-icon>
+                </div>
+                <span>Maharashtra, India</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+</html>
