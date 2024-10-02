@@ -121,18 +121,28 @@
       </h1>
     </section>
 
-    <div style="background: linear-gradient(180deg, #f6fdf4 50%, white 50%)">
+    <div
+      style="
+        background: linear-gradient(
+          180deg,
+          #f6fdf4 25%,
+          white 25%,
+          #ffffff 25%,
+          rgb(255, 255, 255) 25%
+        );
+      "
+    >
       <div
         class="flex flex-col md:flex-row justify-center items-center px-4 py-12 md:py-24"
       >
         <div
-          class="md:w-1/3 bg-white h-[70vh] p-6 shadow-sm rounded-md mb-8 md:mb-0"
+          class="md:w-1/3 bg-[#F8F9FB] h-[70vh] p-6 border-b-4 border-slate-400 mb-8 md:mb-0"
         >
           <div class="border border-gray-200">
             <img
               src="./assets/pattern.jpeg"
               alt="Innovative Solutions Logo"
-              class="w-full h-full object-cover"
+              class="w-full h-[30vh] object-cover"
             />
           </div>
           <h2 class="text-3xl mt-4 text-gray-700 text-center w-full">
@@ -140,7 +150,7 @@
           </h2>
         </div>
 
-        <div class="md:w-2/3 w-full flex gap-4 px-4 md:px-12">
+        <div class="md:w-2/3 w-full md:flex gap-4 px-4 md:px-12">
           <div>
             <p class="text-gray-700 leading-relaxed mb-4">
               We believe that software is more than just lines of code; it's
@@ -181,21 +191,35 @@
           class="h-100 flex-column align-items-stretch pe-4 border-end"
         >
           <nav class="nav nav-pills flex-column">
-            <a class="nav-link" href="#item-1"
+            <a
+              class="harshal py-3 px-2 hover:text-blue-400 active-link"
+              href="#item-1"
+              onclick="setActiveLink(this)"
               >Innovative Solutions, Built with Integrity</a
             >
-            <a class="nav-link" href="#item-2"
+            <a
+              class="harshal py-3 px-2 hover:text-blue-400"
+              href="#item-2"
+              onclick="setActiveLink(this)"
               >A People-Centric Approach to Innovation</a
             >
-            <a class="nav-link" href="#item-3">A Company You Can Trust</a>
-            <a class="nav-link" href="#item-4"
+            <a
+              class="harshal py-3 px-2 hover:text-blue-400"
+              href="#item-3"
+              onclick="setActiveLink(this)"
+              >A Company You Can Trust</a
+            >
+            <a
+              class="harshal py-3 px-2 hover:text-blue-400"
+              href="#item-4"
+              onclick="setActiveLink(this)"
               >A New Way to Run Your Business</a
             >
           </nav>
         </nav>
       </div>
 
-      <div class="col-lg-8 col-md-9 col-sm-12 max-h-screen p-4 md:p-6 lg:p-8">
+      <div class="col-lg-8 col-md-9 col-sm-12 h-[70vh]  p-4 md:p-6 lg:p-8">
         <div
           data-bs-spy="scroll"
           data-bs-target="#navbar-example3"
@@ -253,9 +277,13 @@
     </div>
 
     <section class="bg-[#E4F2FF] h-max py-20 flex flex-col justify-center">
-      <div class="container gap-4 flex items-center justify-center content-center flex-col mx-auto px-6 md:px-12">
+      <div
+        class="container gap-4 flex items-center justify-center content-center flex-col mx-auto px-6 md:px-12"
+      >
         <p class="text-4xl">Be The Part Of Our Journey</p>
-        <a href="" class="px-5 bg-[#F60014] text-white py-2 rounded-sm">Explore</a>
+        <a href="" class="px-5 bg-[#F60014] text-white py-2 rounded-sm"
+          >Explore</a
+        >
       </div>
     </section>
     <script src="./src/footer.js"></script>
@@ -284,6 +312,33 @@
       rotateText();
       setInterval(rotateText, 3000);
     </script>
+
+    <script>
+      let previousActiveLink = null;
+
+      function setActiveLink(element) {
+        if (previousActiveLink) {
+          previousActiveLink.classList.remove("text-blue-500");
+          previousActiveLink.classList.add("text-black-600");
+          previousActiveLink.classList.remove("border-l-4", "border-orange-400")
+        }
+
+        element.classList.remove("text-blue-600");
+        element.classList.add("text-blue-500");
+        element.classList.add("border-l-4", "border-orange-400")
+
+        previousActiveLink = element;
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const firstLink = document.querySelector(".harshal");
+
+        if (firstLink) {
+          setActiveLink(firstLink);
+        }
+      });
+    </script>
+
     <script src="./src/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
