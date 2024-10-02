@@ -33,12 +33,12 @@ document.write(`
             </li>
             <li><a href="#" class="hover:text-gray-600">Privacy Policy</a></li>
             <li><a href="#" class="hover:text-gray-600">Careers</a></li>
-            <li><a href="#" class="hover:text-gray-600">About Us</a></li>
+            <li><a href="./about.html" class="hover:text-gray-600">About Us</a></li>
             <li><a href="#" class="hover:text-gray-600">Contact Us</a></li>
           </ul>
         </div>
       </div>
-      <div class="footer-bottom mt-8 h-[40px] text-center bg-[#0068b5] flex items-center justify-center text-white">
+      <div class="footer-bottom mt-8 h-[40px] text-center bg-[#0068b5] flex items-center content-center justify-center text-white">
         <p>Made with ❤️ from India © 2024 Company Name</p>
       </div>
     </footer>    
